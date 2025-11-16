@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google DevFest Workshop - Chrome DevTools MCP Server</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fab fa-google"></i>
+                <span>DevFest Workshop</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-page="home">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gdg-devfest" class="nav-link" data-page="gdg-devfest">GDG & DevFest</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#devtools-mcp" class="nav-link" data-page="devtools-mcp">DevTools MCP</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-page="about">关于我</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                <span class="highlight">Google DevFest</span><br>
+                                Workshop 2025
+                            </h1>
+                            <h2 class="hero-subtitle">Chrome DevTools MCP Server</h2>
+                            <p class="hero-description">
+                                探索现代开发工具的未来，深入了解Chrome DevTools与MCP Server的集成，
+                                体验开发者工作流的革命性改进。
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="#devtools-mcp" class="btn btn-primary" data-page="devtools-mcp">
+                                    <i class="fas fa-code"></i>
+                                    了解技术详情
+                                </a>
+                                <a href="#about" class="btn btn-secondary" data-page="about">
+                                    <i class="fas fa-user"></i>
+                                    关于演讲者
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <div class="code-dots">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                </div>
+                                <pre class="code-content"><code>// Chrome DevTools MCP Server
+{
+  "server": "chrome-devtools",
+  "protocol": "mcp",
+  "capabilities": {
+    "inspect": "dom",
+    "debug": "javascript", 
+    "profile": "performance"
+  }
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="container">
+                    <h3 class="section-title">Workshop 亮点</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fab fa-chrome"></i>
+                            </div>
+                            <h4>DevTools 集成</h4>
+                            <p>深入了解Chrome DevTools的最新功能和扩展性</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4>MCP 协议</h4>
+                            <p>学习Model Context Protocol的核心概念和应用</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-toolbox"></i>
+                            </div>
+                            <h4>实际应用</h4>
+                            <p>通过实践项目掌握工具的实际使用场景</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GDG & DevFest Page -->
+        <section id="gdg-devfest" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h2 class="page-title">GDG & DevFest</h2>
+                    <p class="page-subtitle">了解开发者社区和年度盛事</p>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <i class="fab fa-google"></i>
+                            <h3>GDG (Google Developers Group)</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>GDG是一个面向所有对Google技术和开源技术感兴趣的开发者社区。无论您是初学者还是专家，都能在这里找到适合的学习资源和交流机会。</p>
+                            
+                            <h4>GDG 特色：</h4>
+                            <ul>
+                                <li>全球性的开发者社区网络</li>
+                                <li>定期举办技术分享和学习活动</li>
+                                <li>开源项目协作和创新</li>
+                                <li>跨领域的知识和经验交流</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h3>DevFest</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>DevFest是GDG社区组织的年度技术大会，旨在庆祝开发者社区的活力和创造力。活动涵盖了Google技术的最新发展、开发者工具、以及未来技术趋势。</p>
+                            
+                            <h4>DevFest 内容：</h4>
+                            <ul>
+                                <li>技术演讲和workshop</li>
+                                <li>实践项目和代码实验室</li>
+                                <li>网络建设和社区交流</li>
+                                <li>新技术预览和深度讨论</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>为何参加 DevFest？</h3>
+                    <p>DevFest不仅是学习最新技术的绝佳机会，更是与全球开发者建立联系、分享经验、激发创新的平台。在这里，您可以：</p>
+                    <ul>
+                        <li>获取第一手的技术资讯和趋势</li>
+                        <li>参与实践性强的技术workshop</li>
+                        <li>建立有价值的职业网络</li>
+                        <li>找到开源项目的合作伙伴</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- DevTools MCP Page -->
+        <section id="devtools-mcp" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h2 class="page-title">DevTools MCP Server</h2>
+                    <p class="page-subtitle">探索Chrome DevTools与现代协议的完美结合</p>
+                </div>
+
+                <div class="content-section">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <i class="fab fa-chrome"></i>
+                            <h3>Chrome DevTools 简介</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Chrome DevTools是Chrome浏览器内置的一套开发者工具，为Web开发者提供了强大的调试、性能分析和开发辅助功能。</p>
+                            
+                            <h4>核心功能：</h4>
+                            <ul>
+                                <li><strong>元素检查器</strong> - 实时查看和编辑DOM元素</li>
+                                <li><strong>JavaScript调试器</strong> - 设置断点、查看调用栈</li>
+                                <li><strong>性能分析器</strong> - 监控页面性能和优化机会</li>
+                                <li><strong>网络面板</strong> - 分析HTTP请求和响应</li>
+                                <li><strong>控制台</strong> - 执行JavaScript代码和日志输出</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>MCP (Model Context Protocol)</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>MCP是一个标准化的协议，旨在建立AI助手与外部工具和数据源之间的安全、标准化的连接。它使得AI能够更好地理解和操作复杂的开发环境。</p>
+                            
+                            <h4>MCP 优势：</h4>
+                            <ul>
+                                <li><strong>标准化接口</strong> - 提供统一的工具集成方式</li>
+                                <li><strong>安全性</strong> - 确保工具访问的安全性和控制</li>
+                                <li><strong>可扩展性</strong> - 支持多种类型的工具和服务</li>
+                                <li><strong>实时交互</strong> - 支持动态的工具调用和数据交换</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <h3>DevTools MCP Server 集成</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>通过MCP协议连接Chrome DevTools，我们可以在AI助手中直接使用强大的浏览器调试工具，创造更智能的开发体验。</p>
+                            
+                            <div class="feature-highlight">
+                                <h4>实际应用场景：</h4>
+                                <div class="scenario-grid">
+                                    <div class="scenario">
+                                        <i class="fas fa-bug"></i>
+                                        <h5>智能调试</h5>
+                                        <p>AI分析错误日志并自动设置调试断点</p>
+                                    </div>
+                                    <div class="scenario">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <h5>性能优化建议</h5>
+                                        <p>基于性能数据提供优化建议和自动修复</p>
+                                    </div>
+                                    <div class="scenario">
+                                        <i class="fas fa-search"></i>
+                                        <h5>代码搜索</h5>
+                                        <p>快速定位代码位置并分析依赖关系</p>
+                                    </div>
+                                    <div class="scenario">
+                                        <i class="fas fa-chart-line"></i>
+                                        <h5>实时监控</h5>
+                                        <p>持续监控应用状态并预警潜在问题</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="code-example">
+                                <h4>基本使用示例：</h4>
+                                <pre><code>// 连接到 DevTools MCP Server
+const mcpClient = new MCPClient('chrome-devtools');
+
+// 获取页面元素
+const elements = await mcpClient.devtools.querySelector('button');
+console.log('找到按钮:', elements);
+
+// 分析页面性能
+const performance = await mcpClient.devtools.getPerformanceMetrics();
+console.log('性能数据:', performance);</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Workshop 学习目标</h3>
+                    <p>通过这次Workshop，您将掌握：</p>
+                    <ul>
+                        <li>DevTools MCP Server的架构和实现原理</li>
+                        <li>如何在AI环境中集成浏览器调试工具</li>
+                        <li>实际项目中的应用案例和最佳实践</li>
+                        <li>未来开发工具的发展趋势和机遇</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h2 class="page-title">关于我</h2>
+                    <p class="page-subtitle">了解更多关于演讲者的信息</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="profile-section">
+                        <div class="profile-card">
+                            <div class="profile-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Robin</h3>
+                                <p class="profile-title">AI Coder</p>
+                                <p class="profile-bio">
+                                    热衷于探索AI技术在软件开发中的应用，
+                                    专注于提升开发者体验和生产力的工具开发。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="profile-details">
+                            <div class="detail-card">
+                                <h4><i class="fas fa-heart"></i> 兴趣爱好</h4>
+                                <p>篮球 - 在运动中寻找创作的灵感和团队协作的智慧</p>
+                            </div>
+                            
+                            <div class="detail-card">
+                                <h4><i class="fas fa-code"></i> 技术专长</h4>
+                                <p>AI开发、工具集成、前端技术、开源项目</p>
+                            </div>
+
+                            <div class="detail-card">
+                                <h4><i class="fas fa-trophy"></i> 参与DevFest</h4>
+                                <p>很高兴能在这次Workshop中与大家分享关于DevTools MCP Server的经验和见解</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-section">
+                        <h3>联系方式</h3>
+                        <div class="contact-grid">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-info">
+                                    <h4>邮箱</h4>
+                                    <a href="mailto:robin@gmail.com">robin@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <div class="contact-info">
+                                    <h4>GitHub</h4>
+                                    <span>欢迎关注我的开源项目</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <div class="contact-info">
+                                    <h4>LinkedIn</h4>
+                                    <span>专业网络交流</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fab fa-twitter"></i>
+                                <div class="contact-info">
+                                    <h4>Twitter</h4>
+                                    <span>技术动态分享</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-section">
+                        <div class="quote-card">
+                            <i class="fas fa-quote-left"></i>
+                            <blockquote>
+                                "技术改变世界，创新驱动未来。在DevTools MCP Server的探索中，
+                                我们不仅是在学习工具，更是在重新定义开发者与代码的交互方式。"
+                            </blockquote>
+                            <cite>— Robin, AI Coder</cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Google DevFest Workshop</h4>
+                    <p>探索Chrome DevTools MCP Server的无限可能</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home" data-page="home">首页</a></li>
+                        <li><a href="#gdg-devfest" data-page="gdg-devfest">GDG & DevFest</a></li>
+                        <li><a href="#devtools-mcp" data-page="devtools-mcp">DevTools MCP</a></li>
+                        <li><a href="#about" data-page="about">关于我</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系信息</h4>
+                    <p>邮箱：robin@gmail.com</p>
+                    <p>AI Coder • 技术爱好者</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Robin. Created with ❤️ for Google DevFest Workshop</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
